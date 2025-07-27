@@ -1,0 +1,16 @@
+{
+  "myProperty1": 1,
+  "myProperty2": false,
+  "myProperty3": "Hello",
+  "myProperty4": "World",
+  "myProperty5": 5.4,
+  "myProperty6": {
+    "first": 42,
+    "second": "the answer",
+    "third": [
+      1,
+      2,
+      3
+    ]
+  }
+}
