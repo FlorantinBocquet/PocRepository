@@ -25,7 +25,7 @@ programming. So I made this object, and added multiple methods to manipulate the
 ### Tree
 
 After discussing binary tree, I learned that database indexes use a tree like structure, so I wanted to try and see what
-would a multi layered binary tree would look like in java. This is my proposition.
+a multi layered binary tree would look like in java. This is my proposition.
 
 - Binary is just a prototype of proposition of an 'ordinary' binary tree
 - NBinary and NBinary 2 are first steps prototype of a multi leveled tree
