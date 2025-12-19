@@ -41,6 +41,6 @@ I just wanted to make a basic algorithm using rules to weight a list of item and
 You find the Stream library to heavy to read ? Me too. So I did that Poc. It covers the basic function of Stream, but as
 fewer layers of obscurity, and is based on the way of thinking of Kotlin Sequence, except there is no extension function.
 
-## Utils
+### Utils
 
 In this folder there is everything and anything, short bit of code I wanted to make.

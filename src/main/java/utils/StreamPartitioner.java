@@ -8,6 +8,9 @@ import java.util.stream.Stream;
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
 
+/**
+ * Simple, easy to use lists partitioner transforming a list into a partitioned stream / parallel stream.
+ */
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class StreamPartitioner {
   public static <T> Stream<List<T>> partition(final List<T> items, final int batchSize) {
