@@ -34,16 +34,3 @@
 # Stable - Creation of a stable version
 
 - Create a stable version of the poc based on the v5
-
-# v6 - TODO
-
-- Being capable of the same as v5
-
-# Improvements
-
-- Can link constructor / method arguments to qualifiers annotation
-- Add support for other configuration file formats (YAML, properties, ...)
-- Ability to read arrays, maps and other iterables from configuration file (properties)
-- Being able to detect circular generation and throw an exception // Create a post autowiring ?
-- Transform the 'create' function into an observable / observer pattern, not loaded objects watching for their params,
-  and a final check to see if all objects are loaded
