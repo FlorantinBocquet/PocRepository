@@ -1,3 +1,8 @@
+/**
+ * This class is a joke error handler made for handling RestClient errors.
+ * It is commented out as this test repo does not have spring boot imported.
+ */
+
 //import java.io.BufferedReader;
 //import java.io.IOException;
 //import java.io.InputStreamReader;
