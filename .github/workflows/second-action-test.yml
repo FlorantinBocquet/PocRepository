@@ -1,11 +1,19 @@
+#######################
+# WHAT THIS ACTION DO #
+#######################
+# The goal of this action is to run the tests of this repository.
+# This action is automatically triggered when files are pushed on GitHub. More precisely, the job only trigger if at
+# least one of the file pushed is under the src folder, are if the pom.xml file is updated.
+#######################
+
 name: Test Workflow
-# This type on workflow indicate that the workflow must be trigger automatically every time the code is pushed on the repository.
-# More precisely, by indicating a path, this workflow will only trigger if a file in the source or test code is modified, or in the pom.
+# This type on workflow indicate that the workflow must be trigger automatically every time the code is pushed on the
+# repository. More precisely, by indicating a path, this workflow will only trigger if a file in the source or test
+# code is modified, or in the pom.
 on:
   push:
     paths:
-      - 'src/main/java/**'
-      - 'src/test/java/**'
+      - 'src/**'
       - 'pom.xml'
 jobs:
   test-job:
@@ -20,8 +28,9 @@ jobs:
         uses: actions/checkout@v6
       # Second step is to install the fight java version.
       - name: Install java
+        # this is another GitHub action. This one installs a given java version into the runner.
         uses: actions/setup-java@v5
-        # Here setup-java come with necessary parameters, so we add them under the 'with' section.
+        # this time, tha action (setup-java) come with necessary parameters, so we add them under the 'with' section.
         with:
           distribution: 'temurin'
           java-version: '21'

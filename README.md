@@ -39,7 +39,8 @@ I just wanted to make a basic algorithm using rules to weight a list of item and
 ### Wrapper
 
 You find the Stream library to heavy to read ? Me too. So I did that Poc. It covers the basic function of Stream, but as
-fewer layers of obscurity, and is based on the way of thinking of Kotlin Sequence, except there is no extension function.
+fewer layers of obscurity, and is based on the way of thinking of Kotlin Sequence, except there is no extension
+function.
 
 ### Utils
 
@@ -47,4 +48,7 @@ In this folder there is everything and anything, short bit of code I wanted to m
 
 ## GitHub actions
 
-This repository has also been used to test GitHub actions.
+This repository has also been used to test GitHub actions. The GitHub actions are commented to explain what each
+parameter do and how to use them. Note some of the comments in the GitHub action might seem duplicated, but it is with
+the intention of having more or less global comment. The comment can be set on a higer levels to explain how a component
+globally work, then redo the explanation on the precise part of the execution.

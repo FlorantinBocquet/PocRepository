@@ -1,3 +1,14 @@
+#######################
+# WHAT THIS ACTION DO #
+#######################
+# This is a basic action that only do two things :
+#
+# Show 'Hello world !' in the runner.
+# Show 'Goodbye !' in the runner.
+#
+# It is a manually triggered job that can be activated in the 'Actions' tab of GitHub.
+#######################
+
 # The name of the workflow.
 name: First workflow
 # The type of workflow, here indicate the workflow should be manually trigger in GitHub 'Actions' section of the repository.
