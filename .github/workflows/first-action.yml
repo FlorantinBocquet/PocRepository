@@ -1,23 +1,21 @@
-# The name of the workflow
+# The name of the workflow.
 name: First workflow
-# The type of workflow, here indicate the workflow should be manually trigger
+# The type of workflow, here indicate the workflow should be manually trigger in GitHub 'Actions' section of the repository.
 on: workflow_dispatch
-# The list of jobs that shaould be executed by the workflow
+# The list of jobs that should be executed by the workflow.
 jobs:
   # The name of the job
   first-job:
-    # The github runner that will execute the job
+    # The GitHub runner that will execute the job.
     runs-on: ubuntu-latest
-    # The list of steps that the job will execute
+    # The list of steps that the job will execute.
     steps:
-      # The first step of the job
-        # The name of the step
+      # The first step of the job.
+      # The name of the step.
       - name: Print greeting
-        # What the step actually do, here showing the String 'Hello world !'
+        # What the step actually do, here showing the String 'Hello world !'.
         run: echo "Hello world !"
       # The second step of the job
-      # The second step is similar to the first, but printing the String 'Goodbye !'
+      # The second step is similar to the first, but printing the String 'Goodbye !'.
       - name: Print goodbye
         run: echo "Goodbye !"
-  
-  

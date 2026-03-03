@@ -1,0 +1,31 @@
+name: Test Workflow
+# This type on workflow indicate that the workflow must be trigger automatically every time the code is pushed on the repository.
+# More precisely, by indicating a path, this workflow will only trigger if a file in the source or test code is modified, or in the pom.
+on:
+  push:
+    paths:
+      - 'src/main/java/**'
+      - 'src/test/java/**'
+      - 'pom.xml'
+jobs:
+  test-job:
+    # All steps are run on the given runner without it being reset.
+    runs-on: ubuntu-latest
+    steps:
+      # First step is to copy the code onto the runner.
+      - name: Get code from the repository
+        # Use a GitHub action. The action here is checkout, an user made action availbale on GitHub marketplace.
+        # There is nothing else to do here, as we use default paramters of the action. However, it is possible for
+        # actions to have custom parameters which then should be added under the 'with' section of the step definition.
+        uses: actions/checkout@v6
+      # Second step is to install the fight java version.
+      - name: Install java
+        uses: actions/setup-java@v5
+        # Here setup-java come with necessary parameters, so we add them under the 'with' section.
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'maven'
+      # Then finally is the execution of the maven goal
+      - name: Run tests with maven
+        run: mvn clean test

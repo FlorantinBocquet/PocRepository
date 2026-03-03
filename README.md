@@ -1,7 +1,7 @@
 # POC Repository
 
 Welcome reader, to this repository dedicated to proofs of concept of any kind. On this repository, I expose the results
-of some of my experiments of code, coming from two question :
+of some of my experiments of code, coming from two questions :
 
 - *'How does it work ?'*
 - *'How can I do it ?'*
@@ -44,3 +44,7 @@ fewer layers of obscurity, and is based on the way of thinking of Kotlin Sequenc
 ### Utils
 
 In this folder there is everything and anything, short bit of code I wanted to make.
+
+## GitHub actions
+
+This repository has also been used to test GitHub actions.
