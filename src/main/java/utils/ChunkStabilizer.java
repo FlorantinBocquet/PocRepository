@@ -5,26 +5,6 @@ import java.util.List;
 import java.util.function.Function;
 
 public class ChunkStabilizer {
-  public static void main(String[] args) {
-
-    List<Integer> inputListOfData = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9);
-
-    final List<ArrayList<Integer>> result = iterate(
-        inputListOfData,
-        input -> {
-          List<Integer> l = new ArrayList<>();
-          for (int i = 1; i <= input; i++) {
-            l.add(i);
-          }
-          return l;
-        },
-        ArrayList::new,
-        20
-    );
-
-    System.out.println("Result: " + result);
-  }
-
   /**
    * Take a list of data as input.
    * <p>
@@ -44,7 +24,7 @@ public class ChunkStabilizer {
    * @param chunkSize                    the size of the chunks to process
    * @return a list of items of data
    */
-  static <I, T, O> List<O> iterate(
+  public static <I, T, O> List<O> iterate(
       List<I> inputListOfData,
       Function<I, List<T>> variableLengthOutputFunction,
       Function<List<T>, O> bufferedLengthInputFunction,
