@@ -61,4 +61,18 @@ public class ChunkStabilizerTest {
 
     Assertions.assertEquals(expectedResult, result);
   }
+
+  @Test
+  void failingTest() {
+    final List<List<Integer>> expectedResult = List.of();
+
+    final List<ArrayList<Integer>> result = ChunkStabilizer.iterate(
+        INPUT_LIST_OF_DATA,
+        INTEGER_LIST_FUNCTION,
+        ArrayList::new,
+        20
+    );
+
+    Assertions.assertEquals(expectedResult, result);
+  }
 }
