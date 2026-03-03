@@ -52,3 +52,5 @@ This repository has also been used to test GitHub actions. The GitHub actions ar
 parameter do and how to use them. Note some of the comments in the GitHub action might seem duplicated, but it is with
 the intention of having more or less global comment. The comment can be set on a higer levels to explain how a component
 globally work, then redo the explanation on the precise part of the execution.
+
+Doc modification : will not retrigger the test ci
