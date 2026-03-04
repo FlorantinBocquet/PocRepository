@@ -311,6 +311,9 @@ public class Binary<D extends Comparable<D>, I, S extends StoredData<D, I>> {
     return result;
   }
 
+  /**
+   * This class is only used in re-balancing
+   */
   @AllArgsConstructor
   private class Level {
     BinaryNode node;

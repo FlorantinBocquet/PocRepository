@@ -192,29 +192,5 @@ public class Test {
     System.out.println();
     System.out.println("Balanced Binary Tree :");
     System.out.println(binaryTree);
-
-//    System.out.println();
-//    System.out.println("Superior or equals to 005-010:");
-//    binaryTree.superiorOrEquals("005-010").forEach(data -> System.out.println("Data: " + data));
-//
-//    System.out.println();
-//    System.out.println("Superior strict to 005-010:");
-//    binaryTree.superiorStrict("005-010").forEach(data -> System.out.println("Data: " + data));
-//
-//    System.out.println();
-//    System.out.println("Inferior or equals to 005-010:");
-//    binaryTree.inferiorOrEquals("005-010").forEach(data -> System.out.println("Data: " + data));
-//
-//    System.out.println();
-//    System.out.println("Inferior strict to 005-010:");
-//    binaryTree.inferiorStrict("005-010").forEach(data -> System.out.println("Data: " + data));
-//
-//    System.out.println();
-//    System.out.println("Between 005-008 and 005-010:");
-//    binaryTree.betweenInclusive("005-008", "005-010").forEach(data -> System.out.println("Data: " + data));
-//
-//    System.out.println();
-//    System.out.println("Between 005-008 and 005-010 (strict):");
-//    binaryTree.betweenExclusive("005-008", "005-010").forEach(data -> System.out.println("Data: " + data));
   }
 }
