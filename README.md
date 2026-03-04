@@ -30,6 +30,8 @@ a multi layered binary tree would look like in java. This is my proposition.
 - Binary is just a prototype of proposition of an 'ordinary' binary tree
 - NBinary and NBinary 2 are first steps prototype of a multi leveled tree
 
+A documentation can be found [here](src/main/java/tree/Tree.md).
+
 The real Poc here is located in the [nbinary](src/main/java/tree/nbinary) source folder.
 
 ### Weighted selector
