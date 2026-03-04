@@ -13,14 +13,18 @@
 name: First workflow
 # The type of workflow, here indicate the workflow should be manually trigger in GitHub 'Actions' section of the repository.
 on: workflow_dispatch
-# The list of jobs that should be executed by the workflow.
+# The list of jobs that should be executed by the workflow. When there is multiple job, they usually run in parallel. If
+# you want to run jobs sequentially, you need to add the 'needs' parameter in the job, with the name of another job as
+# the value : 'needs: first-job', in a second-job definition. If there are multiple, just write them between []. When
+# running sequentially, the second job would only run if the first one was successful.
 jobs:
   # The name of the job
   first-job:
-    # The GitHub runner that will execute the job.
+    # The GitHub runner that will execute the job. Runner is defined at the job level.
     runs-on: ubuntu-latest
     # The list of steps that the job will execute.
     steps:
+      # Steps are executed sequentially.
       # The first step of the job.
       # The name of the step.
       - name: Print greeting
