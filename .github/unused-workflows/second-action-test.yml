@@ -7,14 +7,16 @@
 #######################
 
 name: Test Workflow
-# This type on workflow indicate that the workflow must be trigger automatically every time the code is pushed on the
-# repository. More precisely, by indicating a path, this workflow will only trigger if a file in the source or test
-# code is modified, or in the pom.
 on:
+  # This type on workflow indicate that the workflow must be trigger automatically every time the code is pushed on the
+  # repository. More precisely, by indicating a path, this workflow will only trigger if a file in the source or test
+  # code is modified, or in the pom.
   push:
     paths:
       - 'src/**'
       - 'pom.xml'
+  # By adding multiple type, we can allow multiple way of activating the job. Here a manual trigger is added.
+  workflow_dispatch:
 jobs:
   test-job:
     # All steps are run on the given runner without it being reset.
